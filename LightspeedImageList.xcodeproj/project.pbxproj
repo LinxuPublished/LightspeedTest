@@ -9,13 +9,31 @@
 /* Begin PBXBuildFile section */
 		F44663D328E526D000A1F678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44663D228E526D000A1F678 /* AppDelegate.swift */; };
 		F44663D528E526D000A1F678 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44663D428E526D000A1F678 /* SceneDelegate.swift */; };
-		F44663D728E526D000A1F678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44663D628E526D000A1F678 /* ViewController.swift */; };
-		F44663DA28E526D000A1F678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44663D828E526D000A1F678 /* Main.storyboard */; };
+		F44663D728E526D000A1F678 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44663D628E526D000A1F678 /* ImageListViewController.swift */; };
 		F44663DC28E526D100A1F678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44663DB28E526D100A1F678 /* Assets.xcassets */; };
 		F44663DF28E526D100A1F678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44663DD28E526D100A1F678 /* LaunchScreen.storyboard */; };
 		F44663EA28E526D100A1F678 /* LightspeedImageListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44663E928E526D100A1F678 /* LightspeedImageListTests.swift */; };
 		F44663F428E526D100A1F678 /* LightspeedImageListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44663F328E526D100A1F678 /* LightspeedImageListUITests.swift */; };
 		F44663F628E526D100A1F678 /* LightspeedImageListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44663F528E526D100A1F678 /* LightspeedImageListUITestsLaunchTests.swift */; };
+		F446640728E529D700A1F678 /* ImageListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446640628E529D700A1F678 /* ImageListProtocols.swift */; };
+		F446640928E52B2000A1F678 /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446640828E52B2000A1F678 /* ImageListViewModel.swift */; };
+		F446640E28E5304700A1F678 /* LSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446640D28E5304700A1F678 /* LSImage.swift */; };
+		F446641028E5362500A1F678 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446640F28E5362500A1F678 /* APIError.swift */; };
+		F446641228E5364300A1F678 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446641128E5364300A1F678 /* APIRequest.swift */; };
+		F446641428E5367600A1F678 /* APIRequestProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446641328E5367600A1F678 /* APIRequestProtocols.swift */; };
+		F446641628E5368C00A1F678 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446641528E5368C00A1F678 /* APIResponse.swift */; };
+		F446641828E536A600A1F678 /* APIClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446641728E536A600A1F678 /* APIClients.swift */; };
+		F446641A28E536D500A1F678 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446641928E536D500A1F678 /* EndPoints.swift */; };
+		F446641C28E536E600A1F678 /* EnivronmentConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446641B28E536E600A1F678 /* EnivronmentConfigurations.swift */; };
+		F446641E28E5370200A1F678 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446641D28E5370200A1F678 /* HTTPHeader.swift */; };
+		F446642028E5372100A1F678 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446641F28E5372100A1F678 /* HTTPMethod.swift */; };
+		F446642428E537A200A1F678 /* LSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446642328E537A200A1F678 /* LSApi.swift */; };
+		F446642628E537CC00A1F678 /* GetImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446642528E537CC00A1F678 /* GetImages.swift */; };
+		F446642C28E53BC400A1F678 /* View+Entensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446642B28E53BC400A1F678 /* View+Entensions.swift */; };
+		F446642E28E53E4700A1F678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446642D28E53E4700A1F678 /* ViewController.swift */; };
+		F446643028E540EE00A1F678 /* ImageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446642F28E540EE00A1F678 /* ImageListTableViewCell.swift */; };
+		F446643228E5428F00A1F678 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446643128E5428F00A1F678 /* Collection+Extensions.swift */; };
+		F446643528E5476200A1F678 /* ViewStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446643428E5476200A1F678 /* ViewStates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +57,7 @@
 		F44663CF28E526D000A1F678 /* LightspeedImageList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightspeedImageList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44663D228E526D000A1F678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44663D428E526D000A1F678 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F44663D628E526D000A1F678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F44663D928E526D000A1F678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F44663D628E526D000A1F678 /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
 		F44663DB28E526D100A1F678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44663DE28E526D100A1F678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F44663E028E526D100A1F678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +66,26 @@
 		F44663EF28E526D100A1F678 /* LightspeedImageListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightspeedImageListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44663F328E526D100A1F678 /* LightspeedImageListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightspeedImageListUITests.swift; sourceTree = "<group>"; };
 		F44663F528E526D100A1F678 /* LightspeedImageListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightspeedImageListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F446640328E528B500A1F678 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F446640628E529D700A1F678 /* ImageListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListProtocols.swift; sourceTree = "<group>"; };
+		F446640828E52B2000A1F678 /* ImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
+		F446640D28E5304700A1F678 /* LSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSImage.swift; sourceTree = "<group>"; };
+		F446640F28E5362500A1F678 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		F446641128E5364300A1F678 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		F446641328E5367600A1F678 /* APIRequestProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocols.swift; sourceTree = "<group>"; };
+		F446641528E5368C00A1F678 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		F446641728E536A600A1F678 /* APIClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClients.swift; sourceTree = "<group>"; };
+		F446641928E536D500A1F678 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		F446641B28E536E600A1F678 /* EnivronmentConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnivronmentConfigurations.swift; sourceTree = "<group>"; };
+		F446641D28E5370200A1F678 /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		F446641F28E5372100A1F678 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		F446642328E537A200A1F678 /* LSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSApi.swift; sourceTree = "<group>"; };
+		F446642528E537CC00A1F678 /* GetImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImages.swift; sourceTree = "<group>"; };
+		F446642B28E53BC400A1F678 /* View+Entensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Entensions.swift"; sourceTree = "<group>"; };
+		F446642D28E53E4700A1F678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F446642F28E540EE00A1F678 /* ImageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListTableViewCell.swift; sourceTree = "<group>"; };
+		F446643128E5428F00A1F678 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		F446643428E5476200A1F678 /* ViewStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +136,15 @@
 		F44663D128E526D000A1F678 /* LightspeedImageList */ = {
 			isa = PBXGroup;
 			children = (
+				F446640328E528B500A1F678 /* README.md */,
 				F44663D228E526D000A1F678 /* AppDelegate.swift */,
 				F44663D428E526D000A1F678 /* SceneDelegate.swift */,
-				F44663D628E526D000A1F678 /* ViewController.swift */,
-				F44663D828E526D000A1F678 /* Main.storyboard */,
-				F44663DB28E526D100A1F678 /* Assets.xcassets */,
-				F44663DD28E526D100A1F678 /* LaunchScreen.storyboard */,
-				F44663E028E526D100A1F678 /* Info.plist */,
+				F446640528E5299F00A1F678 /* ImageList */,
+				F446643328E5467200A1F678 /* ViewControllers */,
+				F446642A28E53BB400A1F678 /* Extensions */,
+				F446640C28E5301E00A1F678 /* Models */,
+				F446640428E5291200A1F678 /* Network */,
+				F446640228E5282B00A1F678 /* Resources */,
 			);
 			path = LightspeedImageList;
 			sourceTree = "<group>";
@@ -125,6 +164,95 @@
 				F44663F528E526D100A1F678 /* LightspeedImageListUITestsLaunchTests.swift */,
 			);
 			path = LightspeedImageListUITests;
+			sourceTree = "<group>";
+		};
+		F446640228E5282B00A1F678 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F44663DB28E526D100A1F678 /* Assets.xcassets */,
+				F44663DD28E526D100A1F678 /* LaunchScreen.storyboard */,
+				F44663E028E526D100A1F678 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F446640428E5291200A1F678 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F446642928E537F000A1F678 /* API */,
+				F446642128E5376A00A1F678 /* APIClient */,
+				F446642228E5377F00A1F678 /* Requests */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F446640528E5299F00A1F678 /* ImageList */ = {
+			isa = PBXGroup;
+			children = (
+				F446640628E529D700A1F678 /* ImageListProtocols.swift */,
+				F44663D628E526D000A1F678 /* ImageListViewController.swift */,
+				F446640828E52B2000A1F678 /* ImageListViewModel.swift */,
+				F446642F28E540EE00A1F678 /* ImageListTableViewCell.swift */,
+			);
+			path = ImageList;
+			sourceTree = "<group>";
+		};
+		F446640C28E5301E00A1F678 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F446640D28E5304700A1F678 /* LSImage.swift */,
+				F446643428E5476200A1F678 /* ViewStates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F446642128E5376A00A1F678 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				F446640F28E5362500A1F678 /* APIError.swift */,
+				F446641128E5364300A1F678 /* APIRequest.swift */,
+				F446641328E5367600A1F678 /* APIRequestProtocols.swift */,
+				F446641528E5368C00A1F678 /* APIResponse.swift */,
+				F446641728E536A600A1F678 /* APIClients.swift */,
+				F446641928E536D500A1F678 /* EndPoints.swift */,
+				F446641B28E536E600A1F678 /* EnivronmentConfigurations.swift */,
+				F446641D28E5370200A1F678 /* HTTPHeader.swift */,
+				F446641F28E5372100A1F678 /* HTTPMethod.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		F446642228E5377F00A1F678 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F446642528E537CC00A1F678 /* GetImages.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F446642928E537F000A1F678 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F446642328E537A200A1F678 /* LSApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F446642A28E53BB400A1F678 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F446642B28E53BC400A1F678 /* View+Entensions.swift */,
+				F446643128E5428F00A1F678 /* Collection+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F446643328E5467200A1F678 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F446642D28E53E4700A1F678 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +361,6 @@
 			files = (
 				F44663DF28E526D100A1F678 /* LaunchScreen.storyboard in Resources */,
 				F44663DC28E526D100A1F678 /* Assets.xcassets in Resources */,
-				F44663DA28E526D000A1F678 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +385,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44663D728E526D000A1F678 /* ViewController.swift in Sources */,
+				F44663D728E526D000A1F678 /* ImageListViewController.swift in Sources */,
+				F446643228E5428F00A1F678 /* Collection+Extensions.swift in Sources */,
+				F446643528E5476200A1F678 /* ViewStates.swift in Sources */,
+				F446643028E540EE00A1F678 /* ImageListTableViewCell.swift in Sources */,
+				F446642E28E53E4700A1F678 /* ViewController.swift in Sources */,
+				F446641428E5367600A1F678 /* APIRequestProtocols.swift in Sources */,
+				F446640928E52B2000A1F678 /* ImageListViewModel.swift in Sources */,
+				F446641A28E536D500A1F678 /* EndPoints.swift in Sources */,
 				F44663D328E526D000A1F678 /* AppDelegate.swift in Sources */,
+				F446641628E5368C00A1F678 /* APIResponse.swift in Sources */,
+				F446640728E529D700A1F678 /* ImageListProtocols.swift in Sources */,
+				F446641828E536A600A1F678 /* APIClients.swift in Sources */,
+				F446641028E5362500A1F678 /* APIError.swift in Sources */,
+				F446642628E537CC00A1F678 /* GetImages.swift in Sources */,
 				F44663D528E526D000A1F678 /* SceneDelegate.swift in Sources */,
+				F446641228E5364300A1F678 /* APIRequest.swift in Sources */,
+				F446642028E5372100A1F678 /* HTTPMethod.swift in Sources */,
+				F446641E28E5370200A1F678 /* HTTPHeader.swift in Sources */,
+				F446642C28E53BC400A1F678 /* View+Entensions.swift in Sources */,
+				F446641C28E536E600A1F678 /* EnivronmentConfigurations.swift in Sources */,
+				F446640E28E5304700A1F678 /* LSImage.swift in Sources */,
+				F446642428E537A200A1F678 /* LSApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +443,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F44663D828E526D000A1F678 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F44663D928E526D000A1F678 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F44663DD28E526D100A1F678 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,10 +577,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5BSMFRVCLN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LightspeedImageList/Info.plist;
+				INFOPLIST_FILE = LightspeedImageList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,10 +605,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5BSMFRVCLN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LightspeedImageList/Info.plist;
+				INFOPLIST_FILE = LightspeedImageList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
