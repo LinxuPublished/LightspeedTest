@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Combine
 
 class ImageListTableViewCell: UITableViewCell {
 
@@ -54,8 +53,6 @@ class ImageListTableViewCell: UITableViewCell {
             }
         }
     }
-    
-    private var cancellable: AnyCancellable?
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -75,7 +72,6 @@ class ImageListTableViewCell: UITableViewCell {
     func setupCellWith(_ image: LSImage) {
         titleLabel.text = image.author
         imageUrl = image.downloadUrl
-        cancellable?.cancel()
     }
 }
 
@@ -97,14 +93,5 @@ private extension ImageListTableViewCell {
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16)
         ])
-    }
-
-    private func loadImage(for url: String, in size: CGSize) -> AnyPublisher<UIImage?, Never> {
-        return Just(url)
-        .flatMap({ url -> AnyPublisher<UIImage?, Never> in
-            let url = URL(string: url)!
-            return ImageLoader.shared.loadImage(from: url, in: size)
-        })
-        .eraseToAnyPublisher()
     }
 }

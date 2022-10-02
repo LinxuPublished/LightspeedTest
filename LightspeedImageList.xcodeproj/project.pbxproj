@@ -175,12 +175,11 @@
 		F44663E828E526D100A1F678 /* LightspeedImageListTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4C0F12628E9D5F600436D04 /* ImageListTests */,
 				F4C0F12328E95D5C00436D04 /* Models */,
 				F4C0F11C28E959C800436D04 /* Resource */,
 				F4C0F11128E951DC00436D04 /* Utilitises */,
 				F4C0F11028E9511400436D04 /* Mocks */,
-				F4C0F10E28E950E800436D04 /* ImageListViewControllerTests.swift */,
-				F4C0F11628E9554300436D04 /* ImageListViewModelTests.swift */,
 			);
 			path = LightspeedImageListTests;
 			sourceTree = "<group>";
@@ -326,6 +325,15 @@
 				F4C0F12428E95D6800436D04 /* ModelTest.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F4C0F12628E9D5F600436D04 /* ImageListTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4C0F10E28E950E800436D04 /* ImageListViewControllerTests.swift */,
+				F4C0F11628E9554300436D04 /* ImageListViewModelTests.swift */,
+			);
+			path = ImageListTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
