@@ -23,7 +23,7 @@ extension UIView {
 }
 
 extension UINavigationController {
-    func buildImageListViewNavigationWith() {
+    func buildImageListViewNavigation() {
         navigationBar.prefersLargeTitles = true
 
         let appearance = UINavigationBarAppearance()

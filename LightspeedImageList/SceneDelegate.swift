@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
-    private var lsClients : APIClient = {
+    private let lsClients : APIClient = {
         let urlSessionConfiguration = URLSessionConfiguration.default
         urlSessionConfiguration.timeoutIntervalForRequest = 20
 

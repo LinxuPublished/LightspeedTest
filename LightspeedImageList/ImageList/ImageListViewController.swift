@@ -60,26 +60,47 @@ class ImageListViewController: ViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        viewModel.fetchImages()
-    }
-
     // MARK: - Override Methods
 
     override func setupUI() {
-        navigationController?.buildImageListViewNavigationWith()
+        navigationController?.buildImageListViewNavigation()
+
         view.buildImageListViewWith(tableView)
-        title = "Images"
         
+        title = "Images"
+
+        let add = UIBarButtonItem(title: nil, style: .plain, target: self, action: #selector(addImage))
+        add.image = UIImage(systemName: "plus.app")
+        add.tintColor = .purple
+        navigationItem.rightBarButtonItem = add
+
         tableView.dataSource = self
     }
 }
 
 private extension ImageListViewController {
     // MARK: - Private Methods
+
     func updateView() {
-        tableView.reloadData()
+//        tableView.reloadData()
+//        let newRowIndexPath: IndexPath = .init(row: viewModel.images.count - 1, section: 0)
+//        tableView.scrollToRow(at: newRowIndexPath, at: .bottom, animated: true)
+        let newRowIndexPath: IndexPath = .init(row: viewModel.images.count - 1, section: 0)
+        tableView.insertRows(
+            at: [newRowIndexPath],
+            with: .bottom
+        )
+
+        tableView.scrollToRow(
+            at: newRowIndexPath,
+            at: .bottom,
+            animated: true
+        )
+    }
+    
+    @objc
+    func addImage() {
+        viewModel.fetchImages()
     }
 }
 
@@ -95,8 +116,10 @@ extension ImageListViewController: ImageListViewModelDelegate {
     }
 }
 
+
 extension ImageListViewController: UITableViewDataSource {
     // MARK: - UITableViewDataSource
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.images.count
     }
