@@ -76,15 +76,19 @@ class ImageListViewController: ViewController {
 
         tableView.dataSource = self
     }
+
+    // MARK: - Public Methods
+
+    @objc
+    func addImage() {
+        viewModel.fetchImages()
+    }
 }
 
 private extension ImageListViewController {
     // MARK: - Private Methods
 
     func updateView() {
-//        tableView.reloadData()
-//        let newRowIndexPath: IndexPath = .init(row: viewModel.images.count - 1, section: 0)
-//        tableView.scrollToRow(at: newRowIndexPath, at: .bottom, animated: true)
         let newRowIndexPath: IndexPath = .init(row: viewModel.images.count - 1, section: 0)
         tableView.insertRows(
             at: [newRowIndexPath],
@@ -96,11 +100,6 @@ private extension ImageListViewController {
             at: .bottom,
             animated: true
         )
-    }
-    
-    @objc
-    func addImage() {
-        viewModel.fetchImages()
     }
 }
 
